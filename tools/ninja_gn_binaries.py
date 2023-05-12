@@ -30,7 +30,7 @@ def DownloadUrl(url, output_file):
 
     while True:
         try:
-            sys.stdout.write('Downloading %s...' % url)
+            sys.stdout.write(f'Downloading {url}...')
             sys.stdout.flush()
             response = urlopen(url)
             bytes_done = 0
